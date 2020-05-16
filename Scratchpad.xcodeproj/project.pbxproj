@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DF9B1C60C122E5FD8338C84 /* libPods-ScratchpadTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9AA212161837C1EF8BF29F /* libPods-ScratchpadTests.a */; };
+		2B217E522470B30300104516 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B217E512470B30300104516 /* AppDelegate.m */; };
+		2B217E542470B30500104516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B217E532470B30500104516 /* Assets.xcassets */; };
+		2B217E572470B30500104516 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B217E552470B30500104516 /* MainMenu.xib */; };
+		2B217E5A2470B30500104516 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B217E592470B30500104516 /* main.m */; };
+		2B217E652470B30500104516 /* ScratchpadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B217E642470B30500104516 /* ScratchpadTests.m */; };
+		2B217E702470B30500104516 /* ScratchpadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B217E6F2470B30500104516 /* ScratchpadUITests.m */; };
+		766ADC29D7E78454E3262430 /* libPods-Scratchpad-ScratchpadUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B2942D1E1350A127A936A6 /* libPods-Scratchpad-ScratchpadUITests.a */; };
+		94A9A6B3E8F790BCE9E7294C /* libPods-Scratchpad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F7CE3D392283AEBC13BD62 /* libPods-Scratchpad.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B217E612470B30500104516 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B217E452470B30300104516 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B217E4C2470B30300104516;
+			remoteInfo = Scratchpad;
+		};
+		2B217E6C2470B30500104516 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B217E452470B30300104516 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B217E4C2470B30300104516;
+			remoteInfo = Scratchpad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A9AA212161837C1EF8BF29F /* libPods-ScratchpadTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScratchpadTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CBB3CC5D0E4DA7F274FC411 /* Pods-Scratchpad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scratchpad.release.xcconfig"; path = "Target Support Files/Pods-Scratchpad/Pods-Scratchpad.release.xcconfig"; sourceTree = "<group>"; };
+		2B217E4D2470B30300104516 /* Scratchpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scratchpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B217E502470B30300104516 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B217E512470B30300104516 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B217E532470B30500104516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B217E562470B30500104516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2B217E582470B30500104516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B217E592470B30500104516 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B217E5B2470B30500104516 /* Scratchpad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scratchpad.entitlements; sourceTree = "<group>"; };
+		2B217E602470B30500104516 /* ScratchpadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchpadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B217E642470B30500104516 /* ScratchpadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScratchpadTests.m; sourceTree = "<group>"; };
+		2B217E662470B30500104516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B217E6B2470B30500104516 /* ScratchpadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchpadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B217E6F2470B30500104516 /* ScratchpadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScratchpadUITests.m; sourceTree = "<group>"; };
+		2B217E712470B30500104516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52B2942D1E1350A127A936A6 /* libPods-Scratchpad-ScratchpadUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scratchpad-ScratchpadUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F7CE3D392283AEBC13BD62 /* libPods-Scratchpad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scratchpad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00A027C541B35C97F16B5B4 /* Pods-Scratchpad-ScratchpadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scratchpad-ScratchpadUITests.release.xcconfig"; path = "Target Support Files/Pods-Scratchpad-ScratchpadUITests/Pods-Scratchpad-ScratchpadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EA38450200CC54A27D5BB292 /* Pods-Scratchpad-ScratchpadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scratchpad-ScratchpadUITests.debug.xcconfig"; path = "Target Support Files/Pods-Scratchpad-ScratchpadUITests/Pods-Scratchpad-ScratchpadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA7F99E14EB540C6EC5A3CA4 /* Pods-Scratchpad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scratchpad.debug.xcconfig"; path = "Target Support Files/Pods-Scratchpad/Pods-Scratchpad.debug.xcconfig"; sourceTree = "<group>"; };
+		F9A8F874D79984C3261A2451 /* Pods-ScratchpadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScratchpadTests.debug.xcconfig"; path = "Target Support Files/Pods-ScratchpadTests/Pods-ScratchpadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA4CE21B0940D00A6A42247E /* Pods-ScratchpadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScratchpadTests.release.xcconfig"; path = "Target Support Files/Pods-ScratchpadTests/Pods-ScratchpadTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B217E4A2470B30300104516 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A9A6B3E8F790BCE9E7294C /* libPods-Scratchpad.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B217E5D2470B30500104516 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF9B1C60C122E5FD8338C84 /* libPods-ScratchpadTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B217E682470B30500104516 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766ADC29D7E78454E3262430 /* libPods-Scratchpad-ScratchpadUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B217E442470B30300104516 = {
+			isa = PBXGroup;
+			children = (
+				2B217E4F2470B30300104516 /* Scratchpad */,
+				2B217E632470B30500104516 /* ScratchpadTests */,
+				2B217E6E2470B30500104516 /* ScratchpadUITests */,
+				2B217E4E2470B30300104516 /* Products */,
+				2BD286522471079D00150C6F /* Frameworks */,
+				F2C589556C34EF9C052C1F46 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2B217E4E2470B30300104516 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B217E4D2470B30300104516 /* Scratchpad.app */,
+				2B217E602470B30500104516 /* ScratchpadTests.xctest */,
+				2B217E6B2470B30500104516 /* ScratchpadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B217E4F2470B30300104516 /* Scratchpad */ = {
+			isa = PBXGroup;
+			children = (
+				2B217E502470B30300104516 /* AppDelegate.h */,
+				2B217E512470B30300104516 /* AppDelegate.m */,
+				2B217E532470B30500104516 /* Assets.xcassets */,
+				2B217E552470B30500104516 /* MainMenu.xib */,
+				2B217E582470B30500104516 /* Info.plist */,
+				2B217E592470B30500104516 /* main.m */,
+				2B217E5B2470B30500104516 /* Scratchpad.entitlements */,
+			);
+			path = Scratchpad;
+			sourceTree = "<group>";
+		};
+		2B217E632470B30500104516 /* ScratchpadTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B217E642470B30500104516 /* ScratchpadTests.m */,
+				2B217E662470B30500104516 /* Info.plist */,
+			);
+			path = ScratchpadTests;
+			sourceTree = "<group>";
+		};
+		2B217E6E2470B30500104516 /* ScratchpadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B217E6F2470B30500104516 /* ScratchpadUITests.m */,
+				2B217E712470B30500104516 /* Info.plist */,
+			);
+			path = ScratchpadUITests;
+			sourceTree = "<group>";
+		};
+		2BD286522471079D00150C6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82F7CE3D392283AEBC13BD62 /* libPods-Scratchpad.a */,
+				52B2942D1E1350A127A936A6 /* libPods-Scratchpad-ScratchpadUITests.a */,
+				1A9AA212161837C1EF8BF29F /* libPods-ScratchpadTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2C589556C34EF9C052C1F46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA7F99E14EB540C6EC5A3CA4 /* Pods-Scratchpad.debug.xcconfig */,
+				1CBB3CC5D0E4DA7F274FC411 /* Pods-Scratchpad.release.xcconfig */,
+				EA38450200CC54A27D5BB292 /* Pods-Scratchpad-ScratchpadUITests.debug.xcconfig */,
+				A00A027C541B35C97F16B5B4 /* Pods-Scratchpad-ScratchpadUITests.release.xcconfig */,
+				F9A8F874D79984C3261A2451 /* Pods-ScratchpadTests.debug.xcconfig */,
+				FA4CE21B0940D00A6A42247E /* Pods-ScratchpadTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B217E4C2470B30300104516 /* Scratchpad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B217E742470B30500104516 /* Build configuration list for PBXNativeTarget "Scratchpad" */;
+			buildPhases = (
+				296E066A0320309FD8005893 /* [CP] Check Pods Manifest.lock */,
+				2B217E492470B30300104516 /* Sources */,
+				2B217E4A2470B30300104516 /* Frameworks */,
+				2B217E4B2470B30300104516 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scratchpad;
+			productName = Scratchpad;
+			productReference = 2B217E4D2470B30300104516 /* Scratchpad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B217E5F2470B30500104516 /* ScratchpadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B217E772470B30500104516 /* Build configuration list for PBXNativeTarget "ScratchpadTests" */;
+			buildPhases = (
+				BE7FAE67CA4014711CA3CBE0 /* [CP] Check Pods Manifest.lock */,
+				2B217E5C2470B30500104516 /* Sources */,
+				2B217E5D2470B30500104516 /* Frameworks */,
+				2B217E5E2470B30500104516 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B217E622470B30500104516 /* PBXTargetDependency */,
+			);
+			name = ScratchpadTests;
+			productName = ScratchpadTests;
+			productReference = 2B217E602470B30500104516 /* ScratchpadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B217E6A2470B30500104516 /* ScratchpadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B217E7A2470B30500104516 /* Build configuration list for PBXNativeTarget "ScratchpadUITests" */;
+			buildPhases = (
+				2D0F705A85F099B70C09730F /* [CP] Check Pods Manifest.lock */,
+				2B217E672470B30500104516 /* Sources */,
+				2B217E682470B30500104516 /* Frameworks */,
+				2B217E692470B30500104516 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B217E6D2470B30500104516 /* PBXTargetDependency */,
+			);
+			name = ScratchpadUITests;
+			productName = ScratchpadUITests;
+			productReference = 2B217E6B2470B30500104516 /* ScratchpadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B217E452470B30300104516 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Poren Chiang";
+				TargetAttributes = {
+					2B217E4C2470B30300104516 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					2B217E5F2470B30500104516 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 2B217E4C2470B30300104516;
+					};
+					2B217E6A2470B30500104516 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 2B217E4C2470B30300104516;
+					};
+				};
+			};
+			buildConfigurationList = 2B217E482470B30300104516 /* Build configuration list for PBXProject "Scratchpad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B217E442470B30300104516;
+			productRefGroup = 2B217E4E2470B30300104516 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B217E4C2470B30300104516 /* Scratchpad */,
+				2B217E5F2470B30500104516 /* ScratchpadTests */,
+				2B217E6A2470B30500104516 /* ScratchpadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B217E4B2470B30300104516 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B217E542470B30500104516 /* Assets.xcassets in Resources */,
+				2B217E572470B30500104516 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B217E5E2470B30500104516 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B217E692470B30500104516 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		296E066A0320309FD8005893 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scratchpad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D0F705A85F099B70C09730F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scratchpad-ScratchpadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE7FAE67CA4014711CA3CBE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScratchpadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B217E492470B30300104516 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B217E5A2470B30500104516 /* main.m in Sources */,
+				2B217E522470B30300104516 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B217E5C2470B30500104516 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B217E652470B30500104516 /* ScratchpadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B217E672470B30500104516 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B217E702470B30500104516 /* ScratchpadUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B217E622470B30500104516 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B217E4C2470B30300104516 /* Scratchpad */;
+			targetProxy = 2B217E612470B30500104516 /* PBXContainerItemProxy */;
+		};
+		2B217E6D2470B30500104516 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B217E4C2470B30300104516 /* Scratchpad */;
+			targetProxy = 2B217E6C2470B30500104516 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B217E552470B30500104516 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B217E562470B30500104516 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B217E722470B30500104516 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2B217E732470B30500104516 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2B217E752470B30500104516 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7F99E14EB540C6EC5A3CA4 /* Pods-Scratchpad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Scratchpad/Scratchpad.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Scratchpad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.poren.Scratchpad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2B217E762470B30500104516 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CBB3CC5D0E4DA7F274FC411 /* Pods-Scratchpad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Scratchpad/Scratchpad.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Scratchpad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.poren.Scratchpad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2B217E782470B30500104516 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A8F874D79984C3261A2451 /* Pods-ScratchpadTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScratchpadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.poren.ScratchpadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scratchpad.app/Contents/MacOS/Scratchpad";
+			};
+			name = Debug;
+		};
+		2B217E792470B30500104516 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA4CE21B0940D00A6A42247E /* Pods-ScratchpadTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScratchpadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.poren.ScratchpadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scratchpad.app/Contents/MacOS/Scratchpad";
+			};
+			name = Release;
+		};
+		2B217E7B2470B30500104516 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA38450200CC54A27D5BB292 /* Pods-Scratchpad-ScratchpadUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScratchpadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.poren.ScratchpadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Scratchpad;
+			};
+			name = Debug;
+		};
+		2B217E7C2470B30500104516 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00A027C541B35C97F16B5B4 /* Pods-Scratchpad-ScratchpadUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScratchpadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.poren.ScratchpadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Scratchpad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B217E482470B30300104516 /* Build configuration list for PBXProject "Scratchpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B217E722470B30500104516 /* Debug */,
+				2B217E732470B30500104516 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B217E742470B30500104516 /* Build configuration list for PBXNativeTarget "Scratchpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B217E752470B30500104516 /* Debug */,
+				2B217E762470B30500104516 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B217E772470B30500104516 /* Build configuration list for PBXNativeTarget "ScratchpadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B217E782470B30500104516 /* Debug */,
+				2B217E792470B30500104516 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B217E7A2470B30500104516 /* Build configuration list for PBXNativeTarget "ScratchpadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B217E7B2470B30500104516 /* Debug */,
+				2B217E7C2470B30500104516 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B217E452470B30300104516 /* Project object */;
+}
