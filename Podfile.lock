@@ -1,0 +1,16 @@
+PODS:
+  - cmark-gfm (0.29.0)
+
+DEPENDENCIES:
+  - cmark-gfm (~> 0.29.0)
+
+SPEC REPOS:
+  https://github.com/rschiang/macdown-cocoapods-specs.git:
+    - cmark-gfm
+
+SPEC CHECKSUMS:
+  cmark-gfm: d572ca9c92c9379a24a5fd2b0de8af3200e3eeb1
+
+PODFILE CHECKSUM: 06ed9d7baaf4c900fa8d88b14f099e83b5f237ef
+
+COCOAPODS: 1.9.1
