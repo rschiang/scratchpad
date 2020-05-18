@@ -29,7 +29,8 @@ CMarkParser *parser = nil;
 - (void)textDidChange:(NSNotification *)notification {
     NSDate *startTime = [[NSDate alloc] init];
 
-    NSString *html = [parser parse:[self.textView string]];
+    [parser parse:[self.textView string]];
+    NSString *html = [parser render];
     [self.webView loadHTMLString:html baseURL:nil];
 
     NSLog(@"Time: %.02fms", [startTime timeIntervalSinceNow] * -1000.0);

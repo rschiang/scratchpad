@@ -5,8 +5,11 @@
 
 @implementation CMarkParser
 
+@synthesize document;
+
 static cmark_mem *allocator = nil;
 cmark_llist *extensions = nil;
+int options = 0;
 
 void find_extension(const char *name) {
     cmark_syntax_extension *extension = cmark_find_syntax_extension(name);
@@ -29,14 +32,14 @@ void find_extension(const char *name) {
         find_extension("strikethrough");
         find_extension("autolink");
         find_extension("tasklist");
+        options = CMARK_OPT_LIBERAL_HTML_TAG | CMARK_OPT_UNSAFE | CMARK_OPT_FOOTNOTES;
     }
     return self;
 }
 
-- (NSString *)parse:(NSString *)markdownString
+- (void)parse:(NSString *)markdownString
 {
     const char *markdownBuffer = [markdownString UTF8String];
-    int options = CMARK_OPT_LIBERAL_HTML_TAG | CMARK_OPT_UNSAFE | CMARK_OPT_FOOTNOTES;
 
     cmark_parser *parser = cmark_parser_new(options);
     cmark_llist *it = extensions;
@@ -45,13 +48,18 @@ void find_extension(const char *name) {
     }
 
     cmark_parser_feed(parser, markdownBuffer, strlen(markdownBuffer));
-    cmark_node *document = cmark_parser_finish(parser);
+    document = cmark_parser_finish(parser);
     cmark_parser_free(parser);
+}
+
+- (NSString *)render
+{
+    if (!document) return nil;
 
     const char *htmlBuffer = cmark_render_html(document, options, extensions);
     NSString *htmlString = [[NSString alloc] initWithUTF8String: htmlBuffer];
-    free((void *)htmlBuffer);
 
+    free((void *)htmlBuffer);
     return htmlString;
 }
 

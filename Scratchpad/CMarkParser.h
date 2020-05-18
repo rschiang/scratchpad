@@ -7,12 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <cmark-gfm.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CMarkParser : NSObject
 
-- (NSString *)parse:(NSString *)markdownString;
+@property (readonly) cmark_node *document;
+
+- (void)parse:(NSString *)markdownString;
+- (NSString *)render;
 
 @end
 
