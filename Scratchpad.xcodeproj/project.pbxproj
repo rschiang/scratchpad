@@ -14,6 +14,7 @@
 		2B217E5A2470B30500104516 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B217E592470B30500104516 /* main.m */; };
 		2B217E652470B30500104516 /* ScratchpadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B217E642470B30500104516 /* ScratchpadTests.m */; };
 		2B217E702470B30500104516 /* ScratchpadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B217E6F2470B30500104516 /* ScratchpadUITests.m */; };
+		2B912450247252A3008AFFD0 /* CMarkParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B91244F247252A3008AFFD0 /* CMarkParser.m */; };
 		766ADC29D7E78454E3262430 /* libPods-Scratchpad-ScratchpadUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B2942D1E1350A127A936A6 /* libPods-Scratchpad-ScratchpadUITests.a */; };
 		94A9A6B3E8F790BCE9E7294C /* libPods-Scratchpad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F7CE3D392283AEBC13BD62 /* libPods-Scratchpad.a */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,8 @@
 		2B217E6B2470B30500104516 /* ScratchpadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchpadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B217E6F2470B30500104516 /* ScratchpadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScratchpadUITests.m; sourceTree = "<group>"; };
 		2B217E712470B30500104516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B91244E247252A3008AFFD0 /* CMarkParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMarkParser.h; sourceTree = "<group>"; };
+		2B91244F247252A3008AFFD0 /* CMarkParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMarkParser.m; sourceTree = "<group>"; };
 		52B2942D1E1350A127A936A6 /* libPods-Scratchpad-ScratchpadUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scratchpad-ScratchpadUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F7CE3D392283AEBC13BD62 /* libPods-Scratchpad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scratchpad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00A027C541B35C97F16B5B4 /* Pods-Scratchpad-ScratchpadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scratchpad-ScratchpadUITests.release.xcconfig"; path = "Target Support Files/Pods-Scratchpad-ScratchpadUITests/Pods-Scratchpad-ScratchpadUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				2B217E582470B30500104516 /* Info.plist */,
 				2B217E592470B30500104516 /* main.m */,
 				2B217E5B2470B30500104516 /* Scratchpad.entitlements */,
+				2B91244E247252A3008AFFD0 /* CMarkParser.h */,
+				2B91244F247252A3008AFFD0 /* CMarkParser.m */,
 			);
 			path = Scratchpad;
 			sourceTree = "<group>";
@@ -163,7 +168,6 @@
 				F9A8F874D79984C3261A2451 /* Pods-ScratchpadTests.debug.xcconfig */,
 				FA4CE21B0940D00A6A42247E /* Pods-ScratchpadTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -368,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B912450247252A3008AFFD0 /* CMarkParser.m in Sources */,
 				2B217E5A2470B30500104516 /* main.m in Sources */,
 				2B217E522470B30300104516 /* AppDelegate.m in Sources */,
 			);
