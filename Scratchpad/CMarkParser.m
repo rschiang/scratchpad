@@ -5,26 +5,32 @@
 
 @implementation CMarkParser
 
-cmark_mem *allocator;
+static cmark_mem *allocator = nil;
+cmark_llist *extensions = nil;
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        allocator = cmark_get_default_mem_allocator();
-        cmark_gfm_core_extensions_ensure_registered();
-    }
-    return self;
-}
-
-void find_extension(cmark_parser *parser, cmark_llist *list, const char *name) {
+void find_extension(const char *name) {
     cmark_syntax_extension *extension = cmark_find_syntax_extension(name);
     if (!extension) {
         NSLog(@"Extension %s unavailable", name);
     } else {
-        cmark_parser_attach_syntax_extension(parser, extension);
-        cmark_llist_append(allocator, list, extension);
+        cmark_llist_append(allocator, extensions, extension);
     }
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (!allocator) {
+        allocator = cmark_get_default_mem_allocator();
+        cmark_gfm_core_extensions_ensure_registered();
+    }
+    if (self) {
+        find_extension("table");
+        find_extension("strikethrough");
+        find_extension("autolink");
+        find_extension("tasklist");
+    }
+    return self;
 }
 
 - (NSString *)parse:(NSString *)markdownString
@@ -33,24 +39,26 @@ void find_extension(cmark_parser *parser, cmark_llist *list, const char *name) {
     int options = CMARK_OPT_LIBERAL_HTML_TAG | CMARK_OPT_UNSAFE | CMARK_OPT_FOOTNOTES;
 
     cmark_parser *parser = cmark_parser_new(options);
-    cmark_llist *extensions = nil;
-    find_extension(parser, extensions, "table");
-    find_extension(parser, extensions, "strikethrough");
-    find_extension(parser, extensions, "autolink");
-    find_extension(parser, extensions, "tasklist");
+    cmark_llist *it = extensions;
+    while (it != nil) {
+        cmark_parser_attach_syntax_extension(parser, (cmark_syntax_extension *)it->data);
+    }
 
     cmark_parser_feed(parser, markdownBuffer, strlen(markdownBuffer));
     cmark_node *document = cmark_parser_finish(parser);
     cmark_parser_free(parser);
-    cmark_llist_free_full(cmark_get_default_mem_allocator(), extensions,
-                          (cmark_free_func) cmark_syntax_extension_free);
-
 
     const char *htmlBuffer = cmark_render_html(document, options, extensions);
     NSString *htmlString = [[NSString alloc] initWithUTF8String: htmlBuffer];
     free((void *)htmlBuffer);
 
     return htmlString;
+}
+
+- (void)dealloc
+{
+    cmark_llist_free_full(allocator, extensions,
+                          (cmark_free_func) cmark_syntax_extension_free);
 }
 
 @end

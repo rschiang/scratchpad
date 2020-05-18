@@ -10,8 +10,11 @@
 
 @implementation AppDelegate
 
+CMarkParser *parser = nil;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    parser = [[CMarkParser alloc] init];
 }
 
 
@@ -26,7 +29,6 @@
 - (void)textDidChange:(NSNotification *)notification {
     NSDate *startTime = [[NSDate alloc] init];
 
-    CMarkParser *parser = [[CMarkParser alloc] init];
     NSString *html = [parser parse:[self.textView string]];
     [self.webView loadHTMLString:html baseURL:nil];
 
